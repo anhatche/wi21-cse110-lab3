@@ -3,7 +3,7 @@
     <head>
         <meta name="author" content="Annika Hatcher">
         <meta name="description" content="CSE110 Week 2 Lab">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" type="text/css">
         <title>CSE110 Lab 2</title>
     </head>
 
@@ -63,7 +63,7 @@
                     <fieldset id="inputs">
                         <legend>Random questions</legend>
                         <label for="radio">Choose a color:</label>
-                        <input type="radio" value="Red">Red
+                        <input type="radio" value="Red" id="radio">Red
                         <input type="radio" value="Orange">Orange
                         <input type="radio" value="Yellow">Yellow
                         <input type="radio" value="Green">Green
@@ -89,8 +89,8 @@
                         <input type="time">
                         <br>
                         <label for="countries">Choose your favorite country:</label>
-                        <input list="countries" name="country" id="country">
-                        <datalist id="countries">
+                        <input list="countries" name="country" id="countries">
+                        <datalist id="country">
                             <option value="Japan">
                             <option value="South Africa">
                             <option value="Russia">
