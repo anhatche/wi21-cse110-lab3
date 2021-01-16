@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Annika Hatcher">
+        <meta name="description" content="CSE110 Week 2 Lab">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>CSE110 Lab 2</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to my other GitHub page!</h1>
+        </header>
+        <main>
+            <div>
+                <table>
+                    <caption>Favorites</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <tr>
+                      <th>Pixar Movies</th>
+                      <th>Animals</th>
+                      <th>Candy</th>
+                    </tr>
+                    <tr>
+                      <td>Ratatouille</td>
+                      <td>Elephants</td>
+                      <td>Kit-Kats</td>
+                    </tr>
+                    <tr>
+                      <td>Monsters Inc</td>
+                      <td>Beluga Whales</td>
+                      <td>Hot Tamales</td>
+                    </tr>
+                    <tr>
+                      <td>Wall-E</td>
+                      <td>Puffins</td>
+                      <td>Nerds</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <form action="/">
+                    <section id="select">
+                        <label for="animals">Choose an animal:</label>
+                        <select name="animals" id="animals">
+                        <optgroup label="Mammals">
+                            <option value="beluga whale">Beluga Whale</option>
+                            <option value="tiger">Tiger</option>
+                            <option value="elephant">Elephant</option>
+                        </optgroup>
+                        <optgroup label="Birds">
+                            <option value="toucan">Toucan</option>
+                            <option value="penguin">Penguin</option>
+                            <option value="falcon">falcon</option>
+                        </optgroup>
+                        </select>
+                    </section>
+                    <fieldset id="inputs">
+                        <legend>Random questions</legend>
+                        <label for="radio">Choose a color:</label>
+                        <input type="radio" value="Red">Red
+                        <input type="radio" value="Orange">Orange
+                        <input type="radio" value="Yellow">Yellow
+                        <input type="radio" value="Green">Green
+                        <input type="radio" value="Blue">Blue
+                        <input type="radio" value="Purple">Purple
+                        <br>
+                        <span>Choose fruit:</span>
+                        <input type="checkbox" value="kiwis">kiwis
+                        <input type="checkbox" value="bananas">bananas
+                        <input type="checkbox" value="blueberries">blueberries
+                        <input type="checkbox" value="oranges">oranges
+                        <br>
+                        <label>Pick a number:</label>
+                        <input type="number">
+                        <br>
+                        <label>Birthday?</label>
+                        <input type="date">
+                        <br>
+                        <label>How are the vibes today?</label>
+                        <input type="range" max="10">
+                        <br>
+                        <label>Pick a time:</label>
+                        <input type="time">
+                        <br>
+                        <label for="countries">Choose your favorite country:</label>
+                        <input list="countries" name="country" id="country">
+                        <datalist id="countries">
+                            <option value="Japan">
+                            <option value="South Africa">
+                            <option value="Russia">
+                            <option value="France">
+                            <option value="Bhutan">
+                        </datalist>
+                        <br>
+                        <label>Random word:</label>
+                        <input type="text">
+                        <br>
+                        <label>Secret password:</label>
+                        <input type="password">
+                        <br>
+                    </fieldset>
+                    
+                    <textarea rows="5" cols="50">
+                        Safe space, say anything you want!
+                    </textarea>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div>
+                <h1>big header</h1>
+                <pre>This is pre text, not too sure what that means.</pre>
+                <details>
+                    <summary>Just random text stuff</summary>
+                    <p>This is how you use <b>bold</b>, <strong>strong</strong>, <i>italic</i>, and <em>emphasis</em>.</p>
+                </details>
+                
+                <h2>medium header</h2>
+                <span>My favorite artists:</span>
+                <ol>
+                    <li><a href="https://www.youtube.com/watch?v=x9PNyzWtM7I&list=PLMGQuQq7BA8w9pdUAqBHcsxM-g_oXhK9d">Sammy Rae</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=0-7IHOXkiV8&list=PLL0cqrhIEUZNchGD1fVwblpI7suwGBvRp">Kaleo</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=by3yRdlQvzs&list=PLa5MiwSnbRr1Nb5wDctqKxuY1qN75Soco">Khalid</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Irw04nbXwxk&list=PL-f5sU8-_h3cJgmR0ZxMvuCtlrnli6xfa">Hozier</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=YpJAmlnBxoA&list=RDEMBhlpzGCZlXxLMeHLVGJ2lQ&start_radio=1">Halestorm</a></li>
+                </ol>
+                <hr>
+                <span>Random things I like:</span>
+                <ul>
+                    <li>crosswords</li>
+                    <li>plants</li>
+                    <li>coca cola</li>
+                </ul>
+                <h3>smol header</h3>
+                The <code>code</code> tag makes it look like code I think.
+                <aside>this is an aside, thank you for reading</aside>
+                <template>
+                    <h2>hidden header ooOoOooOo</h2>
+                </template>
+            </div>
+
+            <div>
+                <figure>
+                    <picture>
+                        <img src="bibble.jpeg" alt="Bibble meme">
+                    </picture>
+                    <figcaption>The Scream, 1720 (colorized).</figcaption>
+                </figure>
+                <iframe src="https://www.google.com" title="Google"></iframe>
+                <audio controls>
+                    <source src=".mp3" type="audio/mpeg">
+                    Can't use the audio.
+                </audio>
+                <video controls>
+                    <source src=".mp4" type="video/mp4">
+                    Can't use the video.
+                </video>
+            </div>
+
+            <div>
+                <label>Canvas:</label>
+                <canvas>
+                    Can't use the canvas.
+                </canvas>
+                <label>SVG:</label>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="purple" stroke-width="4" fill="blue"></circle>
+                </svg>
+            </div>
+
+            <button type="button">button</button>
+
+            <nav>
+                <a href="/">top</a>
+            </nav>
+
+        </main>
+        <footer>
+            <p>Author: Annika Hatcher</p>
+            <p>Date: January 15th, 2021</p>
+        </footer>
+    </body>
+</html>
