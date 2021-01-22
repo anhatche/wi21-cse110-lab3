@@ -17,8 +17,6 @@ img {
     border-color: #ca57ce;
     border-width: 2px;
     border-radius: 2px;
-    height: 30px;
-    width: 50px;
     position: static;
 }
 
@@ -53,10 +51,51 @@ table {
 
 .grid-container {
     display: grid;
+    grid-template-rows: 30px 20px;
+    justify-content: space-evenly;
 }
 
 .flex-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#artist-header {
+    color: blue;
+}
+
+p.multitext {
+    padding-left: 5px;
+}
+
+* {
+    position: static;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+img[src*="bibble"] {
+    height: 30px;
+    width: 50px;
+}
+
+div span {
+    margin-right: 10px;
+}
+
+ul > li {
+    color: white;
+}
+
+svg ~ button {
+    padding: 2px;
+}
+
+li + a {
+    color: lightblue;
 }
 
 /* MEDIA RULES */
