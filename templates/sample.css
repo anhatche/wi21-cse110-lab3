@@ -2,6 +2,7 @@
 header {
     text-decoration: underline;
     position: fixed;
+    margin-top: -30px;
 }
 
 body {
