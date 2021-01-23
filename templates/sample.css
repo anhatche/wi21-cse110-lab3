@@ -8,7 +8,7 @@ body {
     background-color: hsla(248, 53%, 58%, 0.8); 
     font-size: 13px;
     font-family: 'Nunito', sans-serif;
-    margin: 50px 15% 10px 15%;
+    margin: 10px 15% 10px 15%;
 }
 
 img {
@@ -47,6 +47,7 @@ table {
     max-width: 50%;
     min-width: 20%;
     background-color: hsl(248, 53%, 58%);
+    margin-top: 10px;
 }
 
 .grid-container {
