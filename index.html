@@ -6,7 +6,9 @@
         <link rel="stylesheet" type="text/css" href="templates/sample.css">
         <title>CSE110 Lab 2</title>
         <style>
-            
+            a:active {
+                background-color: green;
+            }
 
         </style>
     </head>
@@ -123,11 +125,11 @@
                 <pre>This is pre text, not too sure what that means.</pre>
                 <details>
                     <summary>Just random text stuff</summary>
-                    <p>This is how you use <b>bold</b>, <strong>strong</strong>, <i>italic</i>, and <em>emphasis</em>.</p>
+                    <p class="multitext">This is how you use <b>bold</b>, <strong>strong</strong>, <i>italic</i>, and <em>emphasis</em>.</p>
                 </details>
                 
                 <h2>medium header</h2>
-                <span>My favorite artists:</span>
+                <span id="artist-header">My favorite artists:</span>
                 <ol>
                     <li><a href="https://www.youtube.com/watch?v=x9PNyzWtM7I&list=PLMGQuQq7BA8w9pdUAqBHcsxM-g_oXhK9d">Sammy Rae</a></li>
                     <li><a href="https://www.youtube.com/watch?v=0-7IHOXkiV8&list=PLL0cqrhIEUZNchGD1fVwblpI7suwGBvRp">Kaleo</a></li>
@@ -153,7 +155,7 @@
             <div>
                 <figure>
                     <picture>
-                        <img src="images/bibble.jpg" alt="Bibble meme">
+                        <img src="images/bibble.jpg" alt="Bibble meme" style="margin: auto;">
                     </picture>
                     <figcaption>The Scream, 1720 (colorized).</figcaption>
                 </figure>
@@ -179,8 +181,6 @@
                 </svg>
             </div>
 
-            <button type="button">button</button>
-
             <div class="grid-container">
                 <div class="grid-item">1</div>
                 <div class="grid-item">2</div>
@@ -192,6 +192,8 @@
                 <div>2</div>
                 <div>3</div>
             </div>
+
+            <button type="button">button</button>
 
             <nav>
                 <a href="/">top</a>
