@@ -3,6 +3,7 @@
 header {
     text-decoration: underline;
     position: fixed;
+    margin-bottom: 20px;
 }
 
 body {
